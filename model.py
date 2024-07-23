@@ -4,8 +4,12 @@
  
 # Import dependencies
 import random
- 
- 
+import os
+
+
+WORKING_DIR = os.getenv('DOMINO_WORKING_DIR')
+
+print(WORKING_DIR)
 # Define a helper function to generate a random number:
 def random_number(start, stop):
     return random.uniform(start, stop)
